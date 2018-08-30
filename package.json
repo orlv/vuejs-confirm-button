@@ -1,0 +1,19 @@
+{
+  "name": "vuejs-confirm-button",
+  "version": "1.0.0",
+  "description": "Vue button component",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/orlv/vuejs-confirm-button.git"
+  },
+  "author": "Oleg Orlov <oleg.orlv@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orlv/vuejs-confirm-button/issues"
+  },
+  "homepage": "https://github.com/orlv/vuejs-confirm-button#readme",
+  "devDependencies": {
+    "rlv-styles": "^1.0.0"
+  }
+}
