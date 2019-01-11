@@ -3,8 +3,6 @@
 </template>
 
 <script>
-  import 'rlv-styles/styles.css'
-
   export default {
     template: '#vuejs-confirm-button-template',
 

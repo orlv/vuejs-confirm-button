@@ -13,7 +13,5 @@
     "url": "https://github.com/orlv/vuejs-confirm-button/issues"
   },
   "homepage": "https://github.com/orlv/vuejs-confirm-button#readme",
-  "devDependencies": {
-    "rlv-styles": "^1.0.0"
-  }
+  "devDependencies": {}
 }
