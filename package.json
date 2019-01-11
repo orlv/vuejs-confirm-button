@@ -1,11 +1,14 @@
 {
   "name": "vuejs-confirm-button",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue button component",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/orlv/vuejs-confirm-button.git"
+  },
+  "scripts": {
+    "lint": "eslint --fix --ext .js,.vue ."
   },
   "author": "Oleg Orlov <oleg.orlv@gmail.com>",
   "license": "ISC",
@@ -13,5 +16,22 @@
     "url": "https://github.com/orlv/vuejs-confirm-button/issues"
   },
   "homepage": "https://github.com/orlv/vuejs-confirm-button#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.12.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.1.0"
+  }
 }
