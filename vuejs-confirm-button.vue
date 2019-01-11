@@ -1,10 +1,10 @@
 <template id="vuejs-confirm-button-template">
-    <span class="text-button p-0" :class="{'text-button-red': !busy }" @click="click">{{ buttonText }}</span>
+    <span :class="styles" @click="click">{{ buttonText }}</span>
 </template>
 
 <script>
 export default {
-  props: ['callback', 'text', 'confirm'],
+  props: ['callback', 'text', 'confirm', 'mainStyle', 'busyStyle', 'idleStyle'],
 
   data: function () {
     return {
@@ -16,6 +16,14 @@ export default {
   computed: {
     buttonText: function () {
       return this.busy ? 'Wait' : this.fired ? this.confirm : this.text
+    },
+
+    styles: function () {
+      const mainStyle = void 0 !== this.mainStyle ? this.mainStyle : 'text-button p-0'
+      const idleStyle = void 0 !== this.idleStyle ? this.idleStyle : 'text-button-red'
+      const busyStyle = this.busy && void 0 !== this.busyStyle ? this.busyStyle : ''
+
+      return `${mainStyle} ${idleStyle} ${busyStyle}`
     }
   },
 

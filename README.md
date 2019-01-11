@@ -14,8 +14,13 @@ npm i -D vuejs-confirm-button
 ```
 <confirm-button :text="'Drop DB'"
                 :confirm="'Are you sure?'"
-                :callback="() => myMethod()"/>
+                :callback="() => myMethod()"
+                :main-style="main-style"
+                :busy-style="busy"
+                :idle-style="idle"/>
 ```
+
+props 'main-style', 'busy-style' and 'idle-style' are optional
 
 ```
 import ConfirmButton from 'vuejs-confirm-button'
