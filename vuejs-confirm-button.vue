@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  props: ['callback', 'text', 'confirm', 'mainStyle', 'busyStyle', 'idleStyle'],
+  props: ['callback', 'text', 'confirm', 'mainStyle', 'confirmStyle', 'busyStyle', 'idleStyle'],
 
   data: function () {
     return {
@@ -20,10 +20,11 @@ export default {
 
     styles: function () {
       const mainStyle = void 0 !== this.mainStyle ? this.mainStyle : 'text-button p-0'
+      const confirmStyle = void 0 !== this.confirmStyle ? this.confirmStyle : ''
       const idleStyle = void 0 !== this.idleStyle ? this.idleStyle : 'text-button-red'
       const busyStyle = void 0 !== this.busyStyle ? this.busyStyle : ''
 
-      return `${mainStyle} ${this.busy ? busyStyle : idleStyle}`
+      return `${mainStyle} ${this.fired ? confirmStyle : ''} ${this.busy ? busyStyle : idleStyle}`
     }
   },
 
