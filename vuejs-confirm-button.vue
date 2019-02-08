@@ -21,9 +21,9 @@ export default {
     styles: function () {
       const mainStyle = void 0 !== this.mainStyle ? this.mainStyle : 'text-button p-0'
       const idleStyle = void 0 !== this.idleStyle ? this.idleStyle : 'text-button-red'
-      const busyStyle = this.busy && void 0 !== this.busyStyle ? this.busyStyle : ''
+      const busyStyle = void 0 !== this.busyStyle ? this.busyStyle : ''
 
-      return `${mainStyle} ${idleStyle} ${busyStyle}`
+      return `${mainStyle} ${this.busy ? busyStyle : idleStyle}`
     }
   },
 
