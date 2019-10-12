@@ -18,10 +18,12 @@ npm i -D vuejs-confirm-button
                 :main-style="'main-style'"
                 :confirm-style="'confirm-style'"
                 :busy-style="'busy-style'"
-                :idle-style="'idle-style'"/>
+                :idle-style="'idle-style'"
+                :confirm-timeout="2000"
+                :busy-timeout="5000"/>
 ```
 
-props 'main-style', 'confirm-style', 'busy-style' and 'idle-style' are optional
+props 'main-style', 'confirm-style', 'busy-style', 'idle-style', 'confirm-timeout' and 'busy-timeout' are optional
 
 ```
 import ConfirmButton from 'vuejs-confirm-button'
@@ -33,7 +35,7 @@ components: {
 }
 
 methods: {
-  myMethod: function () {
+  myMethod () {
     // ...
   }
 }
