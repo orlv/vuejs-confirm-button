@@ -1,6 +1,6 @@
 {
   "name": "vuejs-confirm-button",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Vue button component",
   "main": "index.js",
   "repository": {
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/orlv/vuejs-confirm-button#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.7.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
     "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/runtime": "^7.6.3",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.2",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "eslint-config": "git+ssh://bitbucket.org/workins-team/eslint-config.git"
