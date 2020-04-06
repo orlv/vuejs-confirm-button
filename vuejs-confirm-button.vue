@@ -1,4 +1,4 @@
-<template id="vuejs-confirm-button-template">
+<template>
     <span :class="styles" @click="click">{{ buttonText }}</span>
 </template>
 
@@ -48,8 +48,6 @@ export default {
         }
       }
     }
-  },
-
-  template: '#vuejs-confirm-button-template'
+  }
 }
 </script>
