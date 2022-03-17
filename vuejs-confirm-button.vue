@@ -19,10 +19,10 @@ export default {
     },
 
     styles () {
-      const mainStyle = void 0 !== this.mainStyle ? this.mainStyle : 'text-button p-0'
-      const confirmStyle = void 0 !== this.confirmStyle ? this.confirmStyle : ''
-      const idleStyle = void 0 !== this.idleStyle ? this.idleStyle : 'text-button-red'
-      const busyStyle = void 0 !== this.busyStyle ? this.busyStyle : ''
+      const mainStyle = this.mainStyle !== undefined ? this.mainStyle : 'text-button p-0'
+      const confirmStyle = this.confirmStyle !== undefined ? this.confirmStyle : ''
+      const idleStyle = this.idleStyle !== undefined ? this.idleStyle : 'text-button-red'
+      const busyStyle = this.busyStyle !== undefined ? this.busyStyle : ''
 
       return `${mainStyle} ${this.fired ? confirmStyle : this.busy ? busyStyle : idleStyle}`
     }
